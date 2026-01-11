@@ -4,7 +4,7 @@ import Header from "./header/Header";
 import LogoutBtn from "./header/LogoutBtn";
 import Button from "./utilities/Button";
 import Input from "./utilities/Input";
-import Logo from "./utilities/logo";
+import Logo from "./utilities/Logo";
 import PostCard from "./utilities/PostCard";
 import Select from "./utilities/Select";
 import RTE from "./editor/RTE";
