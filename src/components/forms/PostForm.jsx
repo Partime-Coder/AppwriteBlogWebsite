@@ -13,13 +13,13 @@ function PostForm({ post }) {
 
  
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log('status:', status, 'userData:', userData);
-    }, 1000); // every 1 second
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log('status:', status, 'userData:', userData);
+  //   }, 1000); // every 1 second
 
-    return () => clearInterval(interval); // cleanup on unmount
-  }, [status, userData]);
+  //   return () => clearInterval(interval); // cleanup on unmount
+  // }, [status, userData]);
 
   
 

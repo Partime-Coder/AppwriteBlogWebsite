@@ -14,15 +14,15 @@ function Home() {
     const dispatch = useDispatch()
 
     useEffect(() => {
-    authService.getCurrentUser().then(user => {
-        if (user) {
-            dispatch(login(user))
-        }
-        else{
-            navigate('/login')
-        }
-    })
-}, [])
+        authService.getCurrentUser().then(user => {
+            if (user) {
+                dispatch(login(user))
+            }
+            else {
+                navigate('/login')
+            }
+        })
+    }, [])
 
 
     useEffect(() => {
@@ -45,14 +45,14 @@ function Home() {
 
     return (
         <div className="w-full py-8">
-  <Container>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      {posts.map(post => (
-        <PostCard key={post.$id} {...post} />
-      ))}
-    </div>
-  </Container>
-</div>
+            <Container>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {posts.map(post => (
+                        <PostCard key={post.$id} {...post} />
+                    ))}
+                </div>
+            </Container>
+        </div>
 
     )
 }
